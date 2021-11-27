@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXRadioButton?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ToggleGroup?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="300.0" prefWidth="400.0" xmlns="http://javafx.com/javafx/8.0.141" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.controllers.ReportController">
+   <children>
+      <Pane layoutX="16.0" layoutY="41.0" prefHeight="240.0" prefWidth="370.0" style="-fx-border-color: black; -fx-border-radius: 20;" AnchorPane.bottomAnchor="20.0" AnchorPane.leftAnchor="20.0" AnchorPane.rightAnchor="20.0" AnchorPane.topAnchor="20.0">
+         <children>
+            <Label layoutX="234.0" layoutY="26.0" text="خيارات التقارير" textFill="#416ad0">
+               <font>
+                  <Font size="19.0" />
+               </font>
+            </Label>
+            <JFXButton contentDisplay="RIGHT" layoutX="34.0" layoutY="202.0" prefHeight="32.0" prefWidth="87.0" ripplerFill="#cfe9ff" style="-fx-background-color: #cfe9ff; -fx-background-radius: 5;" text="طباعة" textFill="#022743">
+               <graphic>
+                  <ImageView>
+                     <image>
+                        <Image url="@../images/print.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+               <font>
+                  <Font size="15.0" />
+               </font>
+            </JFXButton>
+            <ComboBox fx:id="manBox" disable="true" editable="true" layoutX="34.0" layoutY="123.0" prefHeight="25.0" prefWidth="198.0" promptText="إختار الإدارة" />
+            <JFXRadioButton fx:id="allCheck" layoutX="252.0" layoutY="72.0" nodeOrientation="RIGHT_TO_LEFT" onAction="#allManageAction" prefHeight="16.0" prefWidth="74.0" style="-jfx-unselected-color: #416ad0#416ad0;" text="إجمالي">
+               <toggleGroup>
+                  <ToggleGroup fx:id="grp" />
+               </toggleGroup>
+            </JFXRadioButton>
+            <JFXRadioButton fx:id="partCheck" layoutX="116.0" layoutY="72.0" nodeOrientation="RIGHT_TO_LEFT" onAction="#partManageAction" prefHeight="16.0" prefWidth="74.0" style="-jfx-unselected-color: #416ad0#416ad0;" text="تفصيلي" toggleGroup="$grp" />
+         </children>
+      </Pane>
+   </children>
+</AnchorPane>

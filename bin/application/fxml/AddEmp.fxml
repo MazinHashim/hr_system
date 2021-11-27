@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="533.0" prefWidth="500.0" styleClass="menuPane" stylesheets="@../application.css" xmlns="http://javafx.com/javafx/8.0.141" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.controllers.AddEmpController">
+   <children>
+      <Pane layoutX="18.0" layoutY="39.0" prefHeight="124.0" prefWidth="464.0" style="-fx-border-color: black;">
+         <children>
+            <TextField fx:id="numEmpText" alignment="CENTER_RIGHT" layoutX="289.0" layoutY="22.0" prefHeight="25.0" prefWidth="76.0" />
+            <TextField fx:id="nameEmpText" alignment="CENTER_RIGHT" layoutX="14.0" layoutY="22.0" prefHeight="25.0" prefWidth="119.0" />
+            <Label alignment="CENTER_RIGHT" layoutX="377.0" layoutY="24.0" text="رقم الموظف" textAlignment="RIGHT">
+               <font>
+                  <Font name="System Italic" size="14.0" />
+               </font>
+            </Label>
+            <Label alignment="CENTER_RIGHT" layoutX="140.0" layoutY="25.0" text="إسم الموظف" textAlignment="RIGHT">
+               <font>
+                  <Font name="System Italic" size="14.0" />
+               </font>
+            </Label>
+            <JFXButton contentDisplay="GRAPHIC_ONLY" layoutX="232.0" layoutY="22.0" onAction="#searchEvent" prefHeight="25.0" prefWidth="40.0" ripplerFill="#cfe9ff" style="-fx-background-color: #cfe9ff; -fx-background-radius: 5;" text="Q" textFill="#022743">
+               <graphic>
+                  <ImageView>
+                     <image>
+                        <Image url="@../images/search.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+            </JFXButton>
+            <Label layoutX="348.0" layoutY="-12.0" style="-fx-background-color: white; -fx-background-radius: 10;" text="البيانات الشخضية">
+               <font>
+                  <Font name="System Bold" size="14.0" />
+               </font>
+               <padding>
+                  <Insets bottom="2.0" left="2.0" right="2.0" top="2.0" />
+               </padding>
+            </Label>
+            <TextField fx:id="phoneText" alignment="CENTER_RIGHT" layoutX="234.0" layoutY="74.0" prefHeight="25.0" prefWidth="131.0" />
+            <Label alignment="CENTER_RIGHT" layoutX="390.0" layoutY="76.0" text="رقم الهاتف" textAlignment="RIGHT">
+               <font>
+                  <Font name="System Italic" size="14.0" />
+               </font>
+            </Label>
+            <Label alignment="CENTER_RIGHT" layoutX="152.0" layoutY="76.0" text="تارخ الميلاد" textAlignment="RIGHT">
+               <font>
+                  <Font name="System Italic" size="14.0" />
+               </font>
+            </Label>
+            <DatePicker fx:id="dateOB" layoutX="14.0" layoutY="74.0" prefHeight="25.0" prefWidth="119.0" />
+         </children>
+      </Pane>
+      <Pane layoutX="18.0" layoutY="259.0" prefHeight="149.0" prefWidth="464.0" style="-fx-border-color: black;">
+         <children>
+            <TextField fx:id="numUpgText" alignment="CENTER_RIGHT" layoutX="248.0" layoutY="22.0" prefHeight="25.0" prefWidth="119.0" />
+            <Label alignment="CENTER_RIGHT" layoutX="160.0" layoutY="24.0" text="تاريخ التعيين" textAlignment="RIGHT">
+               <font>
+                  <Font name="System Italic" size="14.0" />
+               </font>
+            </Label>
+            <Label alignment="CENTER_RIGHT" layoutX="390.0" layoutY="24.0" text="رقم التعيين" textAlignment="RIGHT">
+               <font>
+                  <Font name="System Italic" size="14.0" />
+               </font>
+            </Label>
+            <DatePicker fx:id="upgDate" layoutX="14.0" layoutY="22.0" prefHeight="25.0" prefWidth="119.0" />
+            <Label layoutX="359.0" layoutY="-11.0" style="-fx-background-color: white; -fx-background-radius: 10;" text="بيانات الوظيفة">
+               <font>
+                  <Font name="System Bold" size="14.0" />
+               </font>
+               <padding>
+                  <Insets bottom="2.0" left="2.0" right="2.0" top="2.0" />
+               </padding>
+            </Label>
+            <TextField fx:id="degreeText" alignment="CENTER_RIGHT" layoutX="14.0" layoutY="62.0" prefHeight="25.0" prefWidth="119.0" />
+            <Label alignment="CENTER_RIGHT" layoutX="141.0" layoutY="65.0" text="الدرجة الوظيفية" textAlignment="RIGHT">
+               <font>
+                  <Font name="System Italic" size="14.0" />
+               </font>
+            </Label>
+            <ComboBox fx:id="manageBox" layoutX="248.0" layoutY="61.0" onAction="#mainSelectioAction" prefHeight="25.0" prefWidth="124.0" promptText="إختار الادارة" />
+            <ComboBox fx:id="jopBox" layoutX="248.0" layoutY="101.0" prefHeight="25.0" prefWidth="124.0" promptText="إختار الوظيفة" />
+            <TextField fx:id="salaryText" alignment="CENTER_RIGHT" layoutX="14.0" layoutY="101.0" prefHeight="25.0" prefWidth="119.0" />
+            <Label alignment="CENTER_RIGHT" layoutX="147.0" layoutY="104.0" text="المرتب الشهري" textAlignment="RIGHT">
+               <font>
+                  <Font name="System Italic" size="14.0" />
+               </font>
+            </Label>
+         </children>
+      </Pane>
+      <JFXButton fx:id="editButton" contentDisplay="RIGHT" disable="true" layoutX="284.0" layoutY="487.0" onAction="#editEmpEvent" prefHeight="32.0" prefWidth="79.0" ripplerFill="#cfe9ff" style="-fx-background-color: #cfe9ff; -fx-background-radius: 5;" text="تحرير" textFill="#022743">
+         <graphic>
+            <ImageView>
+               <image>
+                  <Image url="@../images/edit.png" />
+               </image>
+            </ImageView>
+         </graphic>
+      </JFXButton>
+      <JFXButton contentDisplay="RIGHT" layoutX="398.0" layoutY="487.0" onAction="#AddEmpEvent" prefHeight="32.0" prefWidth="79.0" ripplerFill="#cfe9ff" style="-fx-background-color: #cfe9ff; -fx-background-radius: 5;" text="إضافة" textFill="#022743">
+         <graphic>
+            <ImageView>
+               <image>
+                  <Image url="@../images/new.png" />
+               </image>
+            </ImageView>
+         </graphic>
+      </JFXButton>
+   </children>
+</AnchorPane>

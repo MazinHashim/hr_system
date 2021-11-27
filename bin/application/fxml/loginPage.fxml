@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+
+<AnchorPane prefHeight="300.0" prefWidth="500.0" styleClass="loginanc" stylesheets="@../application.css" xmlns="http://javafx.com/javafx/8.0.141" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.controllers.LoginPageController">
+   <children>
+      <TextField fx:id="userText" alignment="CENTER" layoutX="81.0" layoutY="69.0" prefHeight="30.0" prefWidth="193.0">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </TextField>
+      <Label alignment="CENTER_RIGHT" contentDisplay="RIGHT" layoutX="292.0" layoutY="69.0" prefHeight="33.0" prefWidth="131.0" text="إسم المستخدم" textFill="#031a8d">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+         <padding>
+            <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+         </padding>
+         <graphic>
+            <ImageView>
+               <image>
+                  <Image url="@../images/user.png" />
+               </image>
+            </ImageView>
+         </graphic>
+      </Label>
+      <Label alignment="CENTER_RIGHT" contentDisplay="RIGHT" layoutX="305.0" layoutY="126.0" prefHeight="31.0" prefWidth="118.0" text="كلمة المرور" textFill="#031a8d">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+         <padding>
+            <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+         </padding>
+         <graphic>
+            <ImageView>
+               <image>
+                  <Image url="@../images/password.png" />
+               </image>
+            </ImageView>
+         </graphic>
+      </Label>
+      <JFXButton contentDisplay="RIGHT" layoutX="78.0" layoutY="201.0" onAction="#loginActionEvent" style="-fx-background-color: lightgray; -fx-background-radius: 20;" text="تسجيل دخول" textFill="#003a97">
+         <effect>
+            <DropShadow />
+         </effect>
+         <graphic>
+            <ImageView>
+               <image>
+                  <Image url="@../images/login.png" />
+               </image>
+            </ImageView>
+         </graphic>
+         <font>
+            <Font name="System Bold Italic" size="12.0" />
+         </font>
+      </JFXButton>
+      <JFXButton contentDisplay="RIGHT" layoutX="198.0" layoutY="201.0" onAction="#closeAction" prefHeight="31.0" prefWidth="76.0" style="-fx-background-color: lightgray; -fx-background-radius: 20;" text="إلغاء" textFill="#ff0606">
+         <effect>
+            <DropShadow />
+         </effect>
+         <graphic>
+            <ImageView>
+               <image>
+                  <Image url="@../images/cancel.png" />
+               </image>
+            </ImageView>
+         </graphic>
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </JFXButton>
+      <PasswordField fx:id="passwordText" alignment="CENTER" layoutX="80.0" layoutY="128.0" prefHeight="30.0" prefWidth="193.0">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </PasswordField>
+   </children>
+</AnchorPane>

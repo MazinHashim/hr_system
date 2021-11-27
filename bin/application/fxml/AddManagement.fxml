@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+
+<AnchorPane prefHeight="385.0" prefWidth="686.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/8.0.141" fx:controller="application.controllers.ManagementController">
+   <children>
+      <TableView fx:id="ManageTable" layoutX="20.0" layoutY="64.0" prefHeight="293.0" prefWidth="646.0">
+        <columns>
+          <TableColumn fx:id="mJopsCol" prefWidth="404.0" text="الوظائف" />
+          <TableColumn fx:id="mNameCol" prefWidth="136.0" text="إسم الإدارة" />
+            <TableColumn fx:id="mNumCol" prefWidth="105.0" text="رقم الإدارة" />
+        </columns>
+      </TableView>
+      <TextField fx:id="searchMngText" layoutX="453.0" layoutY="24.0" />
+      <Label layoutX="627.0" layoutY="24.0" text="البحث">
+         <font>
+            <Font name="System Italic" size="16.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>

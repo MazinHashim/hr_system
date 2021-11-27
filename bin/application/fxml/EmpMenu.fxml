@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="546.0" prefWidth="1050.0" xmlns="http://javafx.com/javafx/8.0.141" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.controllers.EmpMenuController">
+   <children>
+      <TableView fx:id="EmpTable" layoutX="16.0" layoutY="87.0" onMouseClicked="#selectEmpByMouse" prefHeight="401.0" prefWidth="1000.0" />
+      <TextField fx:id="searchEmpText" alignment="CENTER_RIGHT" layoutX="707.0" layoutY="40.0" prefHeight="25.0" prefWidth="236.0" promptText="أدخل الدرجة الوظيفية" />
+      <Label alignment="CENTER_RIGHT" layoutX="969.0" layoutY="38.0" text="البحث">
+         <font>
+            <Font size="19.0" />
+         </font>
+      </Label>
+      <JFXButton contentDisplay="RIGHT" layoutX="358.0" layoutY="500.0" onAction="#deleteEmpAction" prefHeight="32.0" prefWidth="156.0" style="-fx-background-color: #cfe9ff; -fx-background-radius: 5;" text="حذف" textFill="#022743">
+         <effect>
+            <DropShadow />
+         </effect>
+         <graphic>
+            <ImageView>
+               <image>
+                  <Image url="@../images/delete.png" />
+               </image>
+            </ImageView>
+         </graphic>
+      </JFXButton>
+      <JFXButton contentDisplay="RIGHT" layoutX="537.0" layoutY="500.0" onAction="#editEmpAction" prefHeight="32.0" prefWidth="156.0" style="-fx-background-color: #cfe9ff; -fx-background-radius: 5;" text="تحرير" textFill="#022743">
+         <effect>
+            <DropShadow />
+         </effect>
+         <graphic>
+            <ImageView>
+               <image>
+                  <Image url="@../images/edit.png" />
+               </image>
+            </ImageView>
+         </graphic>
+      </JFXButton>
+   </children>
+</AnchorPane>

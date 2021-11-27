@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxWidth="1.7976931348623157E308" prefHeight="650.0" prefWidth="1300.0" styleClass="mainanc" stylesheets="@../application.css" xmlns="http://javafx.com/javafx/8.0.141" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.controllers.MainPageController">
+   <children>
+      <Pane prefHeight="86.0" prefWidth="1300.0" style="-fx-background-color: #fbfafa;" styleClass="menuPane" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <children>
+            <JFXButton fx:id="menuEmpButton" contentDisplay="TOP" layoutX="1199.0" layoutY="4.0" onAction="#mainMenuActions" opacity="0.5" ripplerFill="#fbfafa" text="قائمة الموظفين">
+               <graphic>
+                  <ImageView>
+                     <image>
+                        <Image url="@../images/emplyees.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+               <font>
+                  <Font name="System Bold" size="12.0" />
+               </font>
+            </JFXButton>
+            <JFXButton fx:id="holiButton" contentDisplay="TOP" layoutX="940.0" layoutY="5.0" onAction="#mainMenuActions" opacity="0.5" ripplerFill="#fbfafa" text="الإجازات">
+               <graphic>
+                  <ImageView>
+                     <image>
+                        <Image url="@../images/holiday.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+               <font>
+                  <Font name="System Bold" size="12.0" />
+               </font>
+            </JFXButton>
+            <JFXButton fx:id="upgradeButton" contentDisplay="TOP" layoutX="852.0" layoutY="2.0" onAction="#mainMenuActions" opacity="0.5" ripplerFill="#fbfafa" text="الترقيات">
+               <graphic>
+                  <ImageView>
+                     <image>
+                        <Image url="@../images/upgrade2.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+               <font>
+                  <Font name="System Bold" size="12.0" />
+               </font>
+            </JFXButton>
+            <JFXButton fx:id="reportButton" contentDisplay="TOP" layoutX="762.0" layoutY="2.0" onAction="#mainMenuActions" opacity="0.5" prefHeight="66.0" prefWidth="80.0" ripplerFill="#fbfafa" text="التقارير">
+               <graphic>
+                  <ImageView fitHeight="52.0" fitWidth="64.0">
+                     <image>
+                        <Image url="@../images/reports.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+               <font>
+                  <Font name="System Bold" size="12.0" />
+               </font>
+            </JFXButton>
+            <JFXButton fx:id="emploButton" contentDisplay="TOP" layoutX="1089.0" layoutY="4.0" onAction="#mainMenuActions" opacity="0.5" ripplerFill="#fbfafa" text="إضافة الموظفين">
+               <graphic>
+                  <ImageView>
+                     <image>
+                        <Image url="@../images/addemp.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+               <font>
+                  <Font name="System Bold" size="12.0" />
+               </font>
+            </JFXButton>
+            <JFXButton fx:id="manageButton" contentDisplay="TOP" layoutX="1018.0" layoutY="4.0" onAction="#mainMenuActions" opacity="0.5" ripplerFill="#fbfafa" text=" الإدارات">
+               <graphic>
+                  <ImageView>
+                     <image>
+                        <Image url="@../images/management.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+               <font>
+                  <Font name="System Bold" size="12.0" />
+               </font>
+            </JFXButton>
+            <JFXButton layoutX="14.0" layoutY="27.0" onAction="#logoutAction" opacity="0.5" ripplerFill="#fbfafa" style="-fx-border-color: black; -fx-border-radius: 20;" text="تسجيل خروج">
+               <graphic>
+                  <ImageView>
+                     <image>
+                        <Image url="@../images/logout.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+               <font>
+                  <Font name="System Bold" size="12.0" />
+               </font>
+            </JFXButton>
+            <JFXButton fx:id="endButton" contentDisplay="TOP" layoutX="682.0" layoutY="11.0" onAction="#mainMenuActions" opacity="0.5" prefHeight="66.0" prefWidth="80.0" ripplerFill="#fbfafa" text="إنهاء الخدمة">
+               <graphic>
+                  <ImageView fitHeight="43.0" fitWidth="57.0">
+                     <image>
+                        <Image url="@../images/end.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+               <font>
+                  <Font name="System Bold" size="12.0" />
+               </font>
+            </JFXButton>
+         </children>
+      </Pane>
+      <Pane layoutX="520.0" layoutY="529.0" prefHeight="86.0" prefWidth="559.0" style="-fx-background-color: white; -fx-background-radius: 50;">
+         <children>
+            <Label layoutX="136.0" layoutY="40.0" text="نظام إدارة شؤؤن العاملين" textAlignment="RIGHT">
+               <font>
+                  <Font name="Arial Narrow Bold Italic" size="35.0" />
+               </font>
+            </Label>
+            <Label layoutX="115.0" layoutY="2.0" text="وزارة المالية والإقتصاد والقوى العاملة" textAlignment="RIGHT">
+               <font>
+                  <Font name="Arial Narrow Italic" size="26.0" />
+               </font>
+            </Label>
+         </children>
+      </Pane>
+   </children>
+</AnchorPane>

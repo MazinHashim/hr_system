@@ -1,0 +1,16 @@
+/* JavaFX CSS - Leave this comment until you have at least create one rule which uses -fx-Property */
+.mainanc{
+	-fx-background-image: url("images/main.png");
+	-fx-background-size: cover ;
+}
+.loginanc{
+	-fx-background-image: url("images/loginImg.jpg");
+	-fx-background-size: cover ;
+}
+.menuPane JFXButton:hover ,  JFXButton:focused{
+	-fx-background-image: url("images.head.png");
+	-fx-background-size: cover;
+	-fx-opacity: 1.0;
+	-fx-scale-x: 1.1;
+	-fx-scale-y: 1.1;
+}
